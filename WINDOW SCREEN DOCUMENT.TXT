@@ -1,1 +1,25 @@
+                                                                                   Read about the difference between windows, screens, and document in Javascript. 
+
+In JavaScript, window, screen, and document refer to different objects and concepts related to the browser environment. Let's explore the differences between them:
+window:
+The window object represents the browser window or frame that contains the HTML document.
+It is the global object in the browser's JavaScript environment, and it contains properties and methods that deal with the browser window itself, such as dimensions, location, and navigation.
+It serves as the global context for JavaScript code running in the browser.
+Example:
+console.log(window.innerWidth);  // Get the inner width of the browser window
+window.alert("Hello, World!");   // Display an alert in the browser window
+screen:
+The screen object represents the user's screen or monitor.
+It provides information about the screen's characteristics, such as width, height, and color depth.
+It is a property of the window object, so you can access it through window.screen.
+Example:
+console.log(window.screen.width);   // Get the width of the user's screen
+console.log(window.screen.height);  // Get the height of the user's screen
+document:
+The document object represents the HTML document loaded in the browser window.
+It provides methods and properties to interact with the content of the document, such as manipulating elements, handling events, and modifying the structure of the HTML.
+It is part of the Document Object Model (DOM) and serves as the interface between JavaScript and the HTML document.
+Example:
+let heading = document.getElementById("main-heading");  // Get an element by its ID
+heading.innerHTML = "New Heading";                       // Change the content of the element
 
